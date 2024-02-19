@@ -10,6 +10,7 @@ html {
   display: flex;
   background-color: white;
   border-radius: 2%;
+  justify-self: center;
 }
 
 body {
@@ -25,14 +26,31 @@ body {
   max-width: 20vw;
   flex-grow: 1;
   padding: 1rem;
+  align-items: center;
+  background-image: linear-gradient(white, rgb(249, 248, 248));
 }
 .navbar > :first-child {
   display: flex;
   flex-direction: row;
 }
+.navbar > :first-child > img {
+  display: flex;
+  width: 35%;
+  height: 80%;
+}
 .navbar > div {
   display: flex;
   flex-direction: inherit;
+}
+.navbar > :last-child {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 1;
+  padding: 1vw;
+  border-radius: 5%;
+  width: 50%;
+  height: 30%;
 }
 .navbar > :last-child > img {
   border-radius: 100%;
@@ -41,10 +59,12 @@ body {
   border-radius: 10%;
   border-color: none;
   border-width: 0;
-  background-color: transparent;
+  background-color: rgb(249, 245, 245);
   padding: 0.5rem;
   display: flex;
   justify-content: center;
+  border-right: 1vw;
+  border-left: 1vw;
 }
 .navbar > :last-child > button:hover {
   background-color: gold;
@@ -67,6 +87,7 @@ body {
   padding: 0.5rem;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .menu > button:hover {
   background-color: gold;
@@ -79,7 +100,10 @@ body {
 }
 .menu > :nth-child(2) {
   display: flex;
-  justify-content: center;
+}
+.menu > :nth-child(2) > :last-child {
+  width: 10%;
+  border-left: 6vw;
 }
 .burgery > button > img {
   width: 200px;
