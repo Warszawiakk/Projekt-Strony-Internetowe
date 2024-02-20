@@ -9,7 +9,7 @@ html {
 .website {
   display: flex;
   background-color: white;
-  border-radius: 10%;
+  border-radius: 20%;
   justify-self: center;
   height: 78vh;
   position: relative;
@@ -22,6 +22,7 @@ body {
   background-color: rgb(236, 235, 235);
   padding: 3vmax;
   justify-content: center;
+  border-radius: 10%;
 }
 .navbar {
   display: flex;
@@ -70,6 +71,8 @@ body {
   justify-content: center;
   border-right: 1vw;
   border-left: 1vw;
+  height: 30px;
+  align-items: center;
 }
 .navbar > :last-child > button:hover {
   background-color: gold;
@@ -80,10 +83,7 @@ body {
   transition: 0.3s;
   background-color: goldenrod;
 }
-.treść {
-  display: flex;
-  flex-direction: column;
-}
+
 .menu {
   justify-content: left;
   align-items: flex-start;
@@ -126,18 +126,24 @@ body {
   flex-wrap: wrap;
   background-color: transparent;
   flex-grow: 2;
-  gap: 1vw;
+  gap: 2vw;
 }
 .burgery > button {
   display: flex;
   flex-direction: column;
   border-radius: 10%;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border-width: 0;
-  height: 30px;
+  height: 300px;
+  box-shadow: -2px 2px 1px rgb(244, 241, 241);
+  justify-content: center;
+  align-items: center;
+}
+.burgery > button > :last-child {
+  color: rgb(231, 197, 3);
 }
 .burgery > :nth-child(5) > img {
-  width: 50%;
+  width: 124px;
   align-self: center;
 }
 .burgery > :nth-child(4) > img {
@@ -187,8 +193,10 @@ body {
 }
 .treść {
   border-left: 1vw solid transparent;
-  background-image: linear-gradient(white, rgb(249, 248, 248));
+  background-image: linear-gradient(white, rgb(249, 249, 249));
   padding: 1vw;
+  display: flex;
+  flex-direction: column;
 }
 .Notification_count {
   background-color: gold;
