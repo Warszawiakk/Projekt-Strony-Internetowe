@@ -9,8 +9,10 @@ html {
 .website {
   display: flex;
   background-color: white;
-  border-radius: 2%;
+  border-radius: 10%;
   justify-self: center;
+  height: 78vh;
+  position: relative;
 }
 
 body {
@@ -19,6 +21,7 @@ body {
   background-image: url("../assets/bg.png");
   background-color: rgb(236, 235, 235);
   padding: 3vmax;
+  justify-content: center;
 }
 .navbar {
   display: flex;
@@ -26,8 +29,9 @@ body {
   max-width: 20vw;
   flex-grow: 1;
   padding: 1rem;
-  align-items: center;
+  align-items: flex-start;
   background-image: linear-gradient(white, rgb(249, 248, 248));
+  border-right: 1px solid rgb(214, 214, 214);
 }
 .navbar > :first-child {
   display: flex;
@@ -35,8 +39,8 @@ body {
 }
 .navbar > :first-child > img {
   display: flex;
-  width: 35%;
-  height: 80%;
+  width: 55px;
+  height: 50px;
 }
 .navbar > div {
   display: flex;
@@ -49,8 +53,10 @@ body {
   flex-shrink: 1;
   padding: 1vw;
   border-radius: 5%;
-  width: 50%;
-  height: 30%;
+  width: 100px;
+  height: 250px;
+  justify-self: flex-start;
+  align-self: center;
 }
 .navbar > :last-child > img {
   border-radius: 100%;
@@ -60,7 +66,6 @@ body {
   border-color: none;
   border-width: 0;
   background-color: rgb(249, 245, 245);
-  padding: 0.5rem;
   display: flex;
   justify-content: center;
   border-right: 1vw;
@@ -78,6 +83,13 @@ body {
 .treść {
   display: flex;
   flex-direction: column;
+}
+.menu {
+  justify-content: left;
+  align-items: flex-start;
+}
+.menu > h5 {
+  display: flex;
 }
 .menu > button {
   border-radius: 10%;
@@ -99,11 +111,11 @@ body {
   background-color: goldenrod;
 }
 .menu > :nth-child(2) {
-  display: flex;
+  justify-content: flex-start;
 }
 .menu > :nth-child(2) > :last-child {
   width: 10%;
-  border-left: 6vw;
+  border-left: 1vw;
 }
 .burgery > button > img {
   width: 200px;
@@ -112,7 +124,7 @@ body {
 .burgery {
   display: flex;
   flex-wrap: wrap;
-  background-color: white;
+  background-color: transparent;
   flex-grow: 2;
   gap: 1vw;
 }
@@ -122,6 +134,14 @@ body {
   border-radius: 10%;
   background-color: white;
   border-width: 0;
+  height: 30px;
+}
+.burgery > :nth-child(5) > img {
+  width: 50%;
+  align-self: center;
+}
+.burgery > :nth-child(4) > img {
+  height: 122.5px;
 }
 .treść > :first-child > :first-child > button {
   display: flex;
@@ -154,8 +174,26 @@ body {
   display: flex;
   justify-content: center;
 }
+.treść > :first-child :nth-child(2) > :first-child {
+  width: 40px;
+}
+.treść > :first-child > :nth-child(2) > :last-child {
+  border-radius: 5%;
+}
 .treść > :first-child {
   display: flex;
   justify-content: space-between;
   padding-right: 1rem;
+}
+.treść {
+  border-left: 1vw solid transparent;
+  background-image: linear-gradient(white, rgb(249, 248, 248));
+  padding: 1vw;
+}
+.Notification_count {
+  background-color: gold;
+  border-radius: 50%;
+  padding: 5px;
+  width: 30px;
+  border-left: 1vw;
 }
