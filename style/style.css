@@ -13,15 +13,24 @@ html {
   justify-self: center;
   height: 78vh;
   position: relative;
+  z-index: 2;
+  align-self: center;
 }
 
 body {
   display: flex;
   flex-direction: row;
-  background-image: url("../assets/bg.png");
   background-color: rgb(236, 235, 235);
   padding: 3vmax;
   justify-content: center;
+  align-items: center;
+}
+body > img {
+  position: fixed;
+  width: 100vw;
+  height: 116vh;
+  justify-self: center;
+  align-self: center;
 }
 .navbar {
   display: flex;
@@ -46,16 +55,17 @@ body {
   flex-direction: inherit;
 }
 .navbar > :last-child {
-  background-color: rgb(250, 246, 246);
+  background-color: rgb(249, 249, 249);
   display: flex;
   flex-grow: 0;
   flex-shrink: 1;
-  padding: 1vw;
+  padding: 10px;
   border-radius: 5%;
   width: 100px;
   height: 270px;
   justify-self: flex-start;
   align-self: center;
+  border-top: 20vh;
 }
 .navbar > :last-child > img {
   border-radius: 100%;
@@ -191,10 +201,11 @@ body {
   padding-right: 1rem;
 }
 .treść {
-  border-left: 5vw solid transparent;
+  border-left: 1vw solid transparent;
   padding: 1vw;
   display: flex;
   flex-direction: column;
+  border-right: 1vw solid transparent;
 }
 .Notification_count {
   background-color: gold;
