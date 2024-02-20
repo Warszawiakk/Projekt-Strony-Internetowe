@@ -22,7 +22,6 @@ body {
   background-color: rgb(236, 235, 235);
   padding: 3vmax;
   justify-content: center;
-  border-radius: 10%;
 }
 .navbar {
   display: flex;
@@ -48,14 +47,14 @@ body {
   flex-direction: inherit;
 }
 .navbar > :last-child {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(250, 246, 246);
   display: flex;
   flex-grow: 0;
   flex-shrink: 1;
   padding: 1vw;
   border-radius: 5%;
   width: 100px;
-  height: 250px;
+  height: 270px;
   justify-self: flex-start;
   align-self: center;
 }
@@ -71,7 +70,7 @@ body {
   justify-content: center;
   border-right: 1vw;
   border-left: 1vw;
-  height: 30px;
+  height: 40px;
   align-items: center;
 }
 .navbar > :last-child > button:hover {
@@ -135,7 +134,8 @@ body {
   background-color: rgb(255, 255, 255);
   border-width: 0;
   height: 300px;
-  box-shadow: -2px 2px 1px rgb(244, 241, 241);
+  box-shadow: -2px 2px 20px rgb(239, 239, 242);
+  box-shadow: 2px 2px 20px rgb(239, 239, 242);
   justify-content: center;
   align-items: center;
 }
