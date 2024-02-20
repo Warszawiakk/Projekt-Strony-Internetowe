@@ -9,7 +9,7 @@ html {
 .website {
   display: flex;
   background-color: white;
-  border-radius: 20%;
+  border-radius: 3%;
   justify-self: center;
   height: 78vh;
   position: relative;
@@ -30,7 +30,6 @@ body {
   flex-grow: 1;
   padding: 1rem;
   align-items: flex-start;
-  background-image: linear-gradient(white, rgb(249, 248, 248));
   border-right: 1px solid rgb(214, 214, 214);
 }
 .navbar > :first-child {
@@ -192,8 +191,7 @@ body {
   padding-right: 1rem;
 }
 .treść {
-  border-left: 1vw solid transparent;
-  background-image: linear-gradient(white, rgb(249, 249, 249));
+  border-left: 5vw solid transparent;
   padding: 1vw;
   display: flex;
   flex-direction: column;
