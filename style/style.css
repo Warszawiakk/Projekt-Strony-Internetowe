@@ -9,7 +9,7 @@ html {
 .website {
   display: flex;
   background-color: white;
-  border-radius: 20%;
+  border-radius: 30px;
   justify-self: center;
   height: 78vh;
   position: relative;
@@ -22,16 +22,16 @@ body {
   background-color: rgb(236, 235, 235);
   padding: 3vmax;
   justify-content: center;
-  border-radius: 10%;
 }
 .navbar {
+  overflow-y: scroll;
+  overflow-x: visible;
   display: flex;
   flex-direction: column;
   max-width: 20vw;
   flex-grow: 1;
   padding: 1rem;
   align-items: flex-start;
-  background-image: linear-gradient(white, rgb(249, 248, 248));
   border-right: 1px solid rgb(214, 214, 214);
 }
 .navbar > :first-child {
@@ -193,7 +193,7 @@ body {
   width: 40px;
 }
 .treść > :first-child > :nth-child(2) > :last-child {
-  border-radius: 5%;
+  border-radius: 15px;
 }
 .treść > :first-child {
   display: flex;
@@ -202,10 +202,10 @@ body {
 }
 .treść {
   border-left: 1vw solid transparent;
-  background-image: linear-gradient(white, rgb(249, 249, 249));
   padding: 1vw;
   display: flex;
   flex-direction: column;
+  overflow-y: scroll;
 }
 .Notification_count {
   background-color: gold;
