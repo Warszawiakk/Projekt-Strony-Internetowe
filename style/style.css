@@ -214,3 +214,49 @@ body {
   width: 30px;
   border-left: 1vw;
 }
+@media only screen and (max-width: 1000px) {
+  .website {
+  }
+}
+@media only screen and (max-width: 720px) {
+  .navbar p {
+    display: none;
+  }
+  .menu p {
+    display: none;
+  }
+  .navbar h2 {
+    display: none;
+  }
+  .navbar {
+    width: 300px;
+    align-items: center;
+    position: relative;
+  }
+  .waiter {
+    flex-shrink: 2;
+    display: flex;
+  }
+  .top {
+    display: none;
+  }
+  .top > button {
+    display: none;
+  }
+  .top-element {
+    display: none;
+  }
+  .treść > :first-child > :nth-child(2) > :first-child {
+    display: none;
+  }
+  .treść > :first-child > :nth-child(2) > :last-child {
+    width: 60vw;
+  }
+  .treść > :first-child > :first-child {
+    display: none;
+  }
+  .treść {
+    flex-grow: 0;
+    flex-shrink: 1;
+  }
+}
