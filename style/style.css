@@ -33,6 +33,7 @@ body {
   padding: 1rem;
   align-items: flex-start;
   border-right: 1px solid rgb(214, 214, 214);
+  width: 400px;
 }
 .navbar > :first-child {
   display: flex;
@@ -217,8 +218,12 @@ body {
 @media only screen and (max-width: 1000px) {
   .website {
   }
+  .navbar {
+    width: 400px;
+    position: relative;
+  }
 }
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 752px) {
   .navbar p {
     display: none;
   }
@@ -258,5 +263,21 @@ body {
   .treść {
     flex-grow: 0;
     flex-shrink: 1;
+  }
+  .burgery {
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .waiter {
+    display: none;
+  }
+  .navbar > :last-child {
+    display: none;
+  }
+  .burgery {
+    align-items: center;
+    justify-content: center;
   }
 }
